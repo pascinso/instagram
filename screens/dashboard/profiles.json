@@ -1,0 +1,63 @@
+[
+  {
+    "profileImageURL": {
+      "uri": "https://i.stack.imgur.com/l60Hf.png"
+    },
+    "name": "John",
+    "posts": [
+      {
+        "caption": "Beautiful",
+        "likes": 20,
+        "time": 6,
+        "imageURL": {
+          "uri": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg"
+        },
+        "comments": [
+          {
+            "name": "James",
+            "statement": "Hi!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "profileImageURL": {
+      "uri": "https://i.stack.imgur.com/l60Hf.png"
+    },
+    "name": "Maria",
+    "posts": [
+      {
+        "imageURL": {
+          "uri": "https://i2-prod.walesonline.co.uk/news/uk-news/article18917348.ece/ALTERNATES/s615b/0_254870178.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "profileImageURL": {
+      "uri": "https://i.stack.imgur.com/l60Hf.png"
+    },
+    "name": "Angela",
+    "posts": [
+      {
+        "imageURL": {
+          "uri": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"
+        }
+      }
+    ]
+  },
+  {
+    "profileImageURL": {
+      "uri": "https://i.stack.imgur.com/l60Hf.png"
+    },
+    "name": "Mark",
+    "posts": [
+      {
+        "imageURL": {
+          "uri": "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg"
+        }
+      }
+    ]
+  }
+]
