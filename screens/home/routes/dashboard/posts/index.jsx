@@ -4,7 +4,7 @@ export function usePosts() {
   return (
     <FlatList
       data={profiles}
-      keyExtractor={({ profileImageURL, name }) => profileImageURL + name}
+      keyExtractor={({ id }) => id.toString()}
       renderItem={({ item: { profileImageURL, name, posts } }) => (
         <Post
           profileImageSource={profileImageURL}
