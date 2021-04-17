@@ -4,15 +4,14 @@ import {
   nameStyles,
   profileImageStyles,
   postImageStyles,
-  captionStyles,
-  timeStyles,
-  footerStyles,
-  likesStyles,
+  profileStyles,
   React,
   View,
   ProfileImage,
   Text,
   Image,
+  Entypo,
+  Footer,
 } from "./utils";
 
 export function usePost({
@@ -26,18 +25,21 @@ export function usePost({
   return (
     <View style={postStyles}>
       <View style={headerStyles}>
-        <ProfileImage source={profileImageSource} style={profileImageStyles} />
+        <View style={profileStyles}>
+          <ProfileImage
+            source={profileImageSource}
+            style={profileImageStyles}
+          />
 
-        <Text style={nameStyles}>{name}</Text>
+          <Text style={nameStyles}>{name}</Text>
+        </View>
+
+        <Entypo name="dots-three-vertical" size={16} />
       </View>
 
       <Image style={postImageStyles} source={postImageSource} />
 
-      <View style={footerStyles}>
-        <Text style={likesStyles}>{likes} likes</Text>
-        <Text style={captionStyles}>{caption}</Text>
-        <Text style={timeStyles}>{time} ago</Text>
-      </View>
+      <Footer likes={likes} caption={caption} time={time} />
     </View>
   );
 }

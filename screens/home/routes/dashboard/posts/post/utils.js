@@ -1,12 +1,13 @@
 import React from "react";
 import { Dimensions, Image, StyleSheet, Text, View } from "react-native";
-import { useProfileImage as ProfileImage } from "tools/profile-image";
+import { useProfileImage as ProfileImage } from "tools/profile/image";
+import { Entypo } from "@expo/vector-icons";
+import { useFooter as Footer } from "./footer";
 
 const { get: getDimension } = Dimensions;
 const styles = StyleSheet.create({
   postStyles: {
     height: getDimension("window").width,
-    marginBottom: 14,
   },
   profileImageStyles: {
     height: 40,
@@ -15,6 +16,9 @@ const styles = StyleSheet.create({
   headerStyles: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "space-between",
+    paddingLeft: 3,
+    paddingRight: 15,
   },
   nameStyles: {
     fontWeight: "bold",
@@ -23,17 +27,9 @@ const styles = StyleSheet.create({
   postImageStyles: {
     flex: 1,
   },
-  footerStyles: {
-    paddingLeft: 8,
-  },
-  likesStyles: {
-    fontWeight: "bold",
-    marginTop: 3,
-  },
-  captionStyles: { marginTop: 3 },
-  timeStyles: {
-    color: "#8c8c8c",
-    marginTop: 3,
+  profileStyles: {
+    flexDirection: "row",
+    alignItems: "center",
   },
 });
 
@@ -42,11 +38,8 @@ export const {
   profileImageStyles,
   postImageStyles,
   headerStyles,
-  footerStyles,
   nameStyles,
-  likesStyles,
-  captionStyles,
-  timeStyles,
+  profileStyles,
 } = styles;
 
-export { React, View, Text, Image, ProfileImage };
+export { React, Entypo, View, Text, Image, Footer, ProfileImage };

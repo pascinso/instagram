@@ -7,7 +7,6 @@ export function useStories() {
         data={stories}
         keyExtractor={({ name }) => name}
         horizontal
-        showsHorizontalScrollIndicator={false}
         renderItem={({ item: { name, profileImageURL } }) => (
           <Story name={name} source={profileImageURL} />
         )}

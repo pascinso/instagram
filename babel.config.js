@@ -4,7 +4,7 @@
 module.exports = (api) => {
   api.cache(true);
   return {
-    presets: ["@expo/next-adapter/babel"],
+    presets: ["@expo/next-adapter/babel", "babel-preset-expo"],
     overrides: [
       {
         test: "./node_modules/@expo/next-adapter/document.js",
